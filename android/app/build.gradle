@@ -16,8 +16,10 @@ android {
     }
 }
 
-python {
-    version = '3.11'
+chaquopy {
+    defaultConfig {
+        version = '3.11'
+    }
 }
 
 android.sourceSets.main {
