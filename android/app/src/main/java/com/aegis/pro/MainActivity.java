@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.chaquo.python.AndroidPlatform;
+import com.chaquo.python.android.AndroidPlatform;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 
