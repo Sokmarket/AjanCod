@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+<title id="title">AEGIS PRO splash screen</title><desc id="desc">Dark navy background, luminous shield A icon and engineering assistant branding.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#06101F"/><stop offset=".53" stop-color="#07192B"/><stop offset="1" stop-color="#020711"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#1078CE" stop-opacity=".40"/><stop offset=".5" stop-color="#0760A4" stop-opacity=".16"/><stop offset="1" stop-color="#05111F" stop-opacity="0"/></radialGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C4FAFF"/><stop offset=".48" stop-color="#39DDFE"/><stop offset="1" stop-color="#146AFF"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#9CB8D5"/><stop offset="1" stop-color="#E8F7FF"/></linearGradient>
+ <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#2A6C9B" stroke-opacity=".13" stroke-width="1"/></pattern>
+ <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" fill="url(#grid)"/><ellipse cx="540" cy="640" rx="520" ry="600" fill="url(#halo)"/>
+<g fill="none" stroke="#27BDEB" stroke-opacity=".27" stroke-width="3">
+ <path d="M0 450H190L262 522H352M1080 450H890L818 522H728M0 750H150L250 650H325M1080 750H930L830 650H755"/>
+ <path d="M0 880H175L280 775M1080 880H905L800 775M0 580H105L165 640M1080 580H975L915 640"/>
+</g>
+<g fill="#52DEFF" opacity=".7"><circle cx="190" cy="450" r="5"/><circle cx="890" cy="450" r="5"/><circle cx="150" cy="750" r="5"/><circle cx="930" cy="750" r="5"/><circle cx="175" cy="880" r="5"/><circle cx="905" cy="880" r="5"/></g>
+<g transform="translate(250 310) scale(1.15)">
+ <path d="M252 10 448 83v157c0 133-76 225-196 291C132 465 56 373 56 240V83Z" fill="#071322" stroke="url(#edge)" stroke-width="10" filter="url(#glow)"/>
+ <path d="M252 42 414 102v137c0 108-62 187-162 245-100-58-162-137-162-245V102Z" fill="none" stroke="#9AF3FF" stroke-opacity=".6" stroke-width="3"/>
+ <path d="M252 100 376 378h-58l-66-150-66 150h-58Z" fill="url(#metal)" stroke="#55E0FF" stroke-width="4"/>
+ <path d="M252 271 308 378H196Z" fill="#071426" stroke="url(#edge)" stroke-width="5"/>
+ <path d="M111 146 81 162m312-16 30 16M128 370l-26 22m300-22 26 22" stroke="#3EDCFF" stroke-width="6" stroke-linecap="round"/>
+</g>
+<text x="540" y="1120" fill="url(#metal)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="104" font-weight="800" letter-spacing="8" text-anchor="middle">AEGIS <tspan fill="#43DEFF">PRO</tspan></text>
+<text x="540" y="1190" fill="#A7C4DD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="600" letter-spacing="5" text-anchor="middle">AI-DESTEKLİ YAZILIM MÜHENDİSLİĞİ</text>
+<text x="540" y="1260" fill="#D7E8F8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="35" text-anchor="middle">Analiz et. Çöz. Doğrula.</text>
+<g transform="translate(170 1450)">
+ <rect x="0" y="0" width="740" height="2" fill="#3AD9FF" opacity=".35"/>
+ <g transform="translate(10 54)"><circle cx="16" cy="14" r="13" fill="none" stroke="#4EE4FF" stroke-width="3"/><path d="m9 14 5 5 10-12" fill="none" stroke="#4EE4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="48" y="23" fill="#D4E8F7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27">Kod üretimi ve inceleme</text></g>
+ <g transform="translate(10 123)"><circle cx="16" cy="14" r="13" fill="none" stroke="#4EE4FF" stroke-width="3"/><path d="m9 14 5 5 10-12" fill="none" stroke="#4EE4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="48" y="23" fill="#D4E8F7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27">Hata teşhisi ve test kanıtı</text></g>
+ <g transform="translate(10 192)"><circle cx="16" cy="14" r="13" fill="none" stroke="#4EE4FF" stroke-width="3"/><path d="m9 14 5 5 10-12" fill="none" stroke="#4EE4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="48" y="23" fill="#D4E8F7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27">İzinli ekran analizi ve gizlilik</text></g>
+ <rect x="0" y="270" width="740" height="12" rx="6" fill="#132B43" stroke="#27638B" stroke-width="2"/><rect x="2" y="272" width="240" height="8" rx="4" fill="url(#edge)"/>
+</g>
+<text x="540" y="1810" fill="#7899B7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" letter-spacing="4" text-anchor="middle">AEGIS PRO  ·  v0.3.0</text>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "create-example",
+      "type": "write_text",
+      "path": "src/example.py",
+      "content": "def add(a, b):\n    return a + b\n"
+    },
+    {
+      "id": "compile-example",
+      "type": "python_compile",
+      "path": "src/example.py",
+      "depends_on": [
+        "create-example"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+<title id="title">AEGIS PRO application icon</title>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102D4D"/><stop offset=".55" stop-color="#071426"/><stop offset="1" stop-color="#020711"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B6F6FF"/><stop offset=".5" stop-color="#37D9FF"/><stop offset="1" stop-color="#1572FF"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#A6C0DB"/><stop offset="1" stop-color="#E9F7FF"/></linearGradient>
+ <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#225C80" stroke-opacity=".18" stroke-width="1"/></pattern>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg)"/>
+<rect width="512" height="512" rx="112" fill="url(#grid)"/>
+<circle cx="256" cy="230" r="166" fill="#1684FF" opacity=".07"/>
+<path d="M256 53 405 108v120c0 100-58 169-149 219-91-50-149-119-149-219V108Z" fill="#071322" stroke="url(#edge)" stroke-width="11" filter="url(#glow)"/>
+<path d="M256 78 379 123v103c0 79-45 138-123 183-78-45-123-104-123-183V123Z" fill="url(#bg)" stroke="#8DEFFF" stroke-opacity=".55" stroke-width="3"/>
+<path d="M256 117 355 341h-47l-52-119-52 119h-47Z" fill="url(#metal)" stroke="#53DEFF" stroke-width="3"/>
+<path d="M256 253 300 341h-88Z" fill="#061426" stroke="url(#edge)" stroke-width="5"/>
+<path d="M104 157 77 171m331-14 27 14M117 330l-22 20m300-20 22 20" stroke="#37D9FF" stroke-width="6" stroke-linecap="round"/>
+<text x="256" y="435" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="800" font-size="37" fill="#ECF8FF" text-anchor="middle" letter-spacing="2">AEGIS PRO</text>
+</svg>

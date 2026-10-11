@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegis-pro"
+version = "0.3.0"
+description = "Guarded AI-assisted software engineering, diagnostics, and opt-in screen analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+screen = ["mss>=9.0", "Pillow>=10.0"]
+
+[project.scripts]
+aegis = "aegis.cli:main"
+
+[tool.setuptools]
+packages = ["aegis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

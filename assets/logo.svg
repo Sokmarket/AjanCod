@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">AEGIS PRO</title><desc id="desc">A modern shield and A mark in cyan, steel and deep navy.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4FAFF"/><stop offset=".45" stop-color="#9CB8D6"/><stop offset="1" stop-color="#EAF5FF"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9BF6FF"/><stop offset=".5" stop-color="#36D9FF"/><stop offset="1" stop-color="#1478FF"/></linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#153756"/><stop offset="1" stop-color="#050E1C"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g transform="translate(34 8)">
+    <path d="M150 15 270 59v104c0 79-47 134-120 174C77 297 30 242 30 163V59Z" fill="url(#shield)" stroke="url(#cyan)" stroke-width="8" filter="url(#glow)"/>
+    <path d="M150 35 250 72v91c0 62-36 108-100 145-64-37-100-83-100-145V72Z" fill="none" stroke="#A3EFFF" stroke-opacity=".56" stroke-width="2"/>
+    <path d="M150 70 225 243h-34l-41-94-41 94H75Z" fill="url(#steel)" stroke="#36D9FF" stroke-width="2"/>
+    <path d="M150 172 190 243h-80Z" fill="#071426" stroke="url(#cyan)" stroke-width="3"/>
+    <path d="M67 105 38 118M233 105l29 13M72 259l-20 18M228 259l20 18" stroke="#36D9FF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="354" y="167" fill="url(#steel)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="116" font-weight="800" letter-spacing="2">AEGIS</text>
+  <text x="774" y="167" fill="url(#cyan)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="116" font-weight="800" letter-spacing="2">PRO</text>
+  <text x="362" y="225" fill="#B5C9DE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27" font-weight="600" letter-spacing="3">AUTONOMOUS CODE ENGINEERING</text>
+  <path d="M360 254H1110" stroke="#36D9FF" stroke-opacity=".55" stroke-width="2"/>
+  <text x="362" y="296" fill="#72E6FF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="23" letter-spacing="2">ANALYZE  ·  SOLVE  ·  VERIFY</text>
+</svg>

@@ -1,0 +1,29 @@
+AEGIS PRO v0.3.0 — Build and verification evidence
+Date: 2026-10-11
+Environment: Python 3.13.5; Linux-6.18.44-x86_64-with-glibc2.41
+
+Input ZIP verification: the supplied v0.2.0 archive SHA-256 matched the supplied value `9a4351e3ef2a91fab713641edf44a59c89fff75266caaf1c4ae58c052e0ac10b`; `unzip -t` reported no compressed-data errors; baseline suite passed 13/13 tests.
+
+Executed checks in this build:
+- `python -m unittest discover -s tests -v`: 44 tests ran; 44 passed; 0 failed.
+- `python -m compileall -q aegis tests`: passed.
+- `sh -n scripts/publish-to-github.sh`: passed.
+- `python -m aegis --version`: AEGIS PRO 0.3.0.
+- `python -m aegis --help`: passed.
+- `python -m aegis validate-plan examples/plan-example.json`: PLAN_VALID; 2 tasks.
+- `python -m aegis run-checks --workspace <temp>`: PASSED; 2 tasks (write + in-memory Python compile).
+- `python -m aegis inspect --workspace .`: PASSED; 29 Python files scanned; 0 syntax errors.
+- `python -m aegis diagnose --log <test log>`: returned a NameError diagnosis and a verification suggestion.
+- `python -m aegis screen-permission status --workspace <temp>`: screen permission disabled by default.
+- Built a wheel successfully: `aegis_pro-0.3.0-py3-none-any.whl`, 32,285 bytes, SHA-256 `6965ad322ab64d3e39af66c8903fccf59b1b3a9d9135aae9761dbaed58acfd9c`.
+- Installed that wheel into an isolated temporary target and ran its installed `aegis --version`: AEGIS PRO 0.3.0.
+
+Important unverified / unimplemented integrations:
+- No live OpenAI-compatible model connection was attempted. Unit tests mock model responses.
+- Optional `mss`/Pillow screen-capture dependencies were absent in the test environment; no real desktop screenshot or remote vision endpoint was tested.
+- Android-wide screen capture is not implemented by the Python CLI. A native Android app needs a MediaProjection permission flow.
+- No OS/container sandbox is implemented. Unit tests and supported Python tasks run with the invoking user's permissions.
+- A complete model -> apply -> regression test -> autonomous repair loop is not implemented; apply is explicit and regression tests are a separate step.
+- No GitHub repository was created and no push/deployment was performed. A carefully scoped `scripts/publish-to-github.sh` helper is included for use after a remote repository is created.
+
+This evidence records the commands run in this environment. It is not a claim of zero defects or universal platform compatibility.

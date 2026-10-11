@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-11",
+  "policy": "Architectural study only; no upstream source code was copied into AEGIS PRO v0.3.0.",
+  "sources": [
+    {
+      "name": "Aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "license_signal": "Apache-2.0 shown by upstream GitHub repository",
+      "evidence_url": "https://github.com/Aider-AI/aider/blob/main/LICENSE.txt",
+      "disposition": "INSPIRE",
+      "study_areas": ["repository context mapping", "iterative edit/test loop", "Git diff workflow"],
+      "adoption_gate": "Before any code reuse, pin an immutable commit and review the selected source, tests, license, dependencies and notices."
+    },
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "license_signal": "MIT shown by upstream GitHub repository",
+      "evidence_url": "https://github.com/All-Hands-AI/OpenHands",
+      "disposition": "INSPIRE",
+      "study_areas": ["agent/server separation", "tool interfaces", "workspace lifecycle", "events and automation"],
+      "adoption_gate": "Review the exact component and its dependency tree; do not import the whole platform into the standard-library core."
+    },
+    {
+      "name": "SWE-agent",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "license_signal": "MIT in upstream LICENSE; pyproject targets Python >=3.11 and declares a broad dependency set",
+      "evidence_url": "https://github.com/SWE-agent/SWE-agent/blob/main/LICENSE",
+      "disposition": "INSPIRE",
+      "study_areas": ["issue-to-patch trajectories", "tool interface design", "reproducible task evaluation"],
+      "adoption_gate": "Review install scripts, executable tools, test harnesses, licenses and transitive dependencies before any adoption."
+    },
+    {
+      "name": "Ollama OpenAI compatibility",
+      "url": "https://github.com/ollama/ollama/blob/main/docs/api/openai-compatibility.mdx",
+      "license_signal": "API documentation; not an AEGIS runtime dependency",
+      "disposition": "ADAPT",
+      "study_areas": ["OpenAI-compatible chat completions", "image input support", "model endpoint configuration"],
+      "adoption_gate": "The configured model must explicitly support image/vision input for screen analysis; compatibility varies by model and endpoint."
+    },
+    {
+      "name": "OWASP Secure Code Review Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html",
+      "license_signal": "Security guidance, not a runtime dependency",
+      "disposition": "ADAPT",
+      "study_areas": ["risk-based review", "diff-focused review", "input handling", "authorization", "secrets and logging"],
+      "adoption_gate": "Use the checklist as a review aid; automated checks are not proof that a system is secure."
+    }
+  ],
+  "general_controls": [
+    "Do not scrape or clone every repository indiscriminately.",
+    "Record the specific file paths and immutable revisions reviewed before source reuse.",
+    "Keep license headers and notices for code that is legally reused.",
+    "Treat repository contents and model outputs as untrusted input.",
+    "Prefer architecture lessons over new dependencies when the standard library suffices."
+  ]
+}
